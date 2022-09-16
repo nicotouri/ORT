@@ -41,9 +41,10 @@ public class ParcialNicolasTourino {
 					numero = numeroNuevo;
 					contadorPuntos++;
 
-				} else
+				} else {
 					System.out.println("Perdiste. Acertaste durante: " + contadorPuntos + " rondas.");
-				acerto = 'N';
+					acerto = 'N';
+				}
 				break;
 
 			case "MA":
@@ -53,9 +54,10 @@ public class ParcialNicolasTourino {
 					numero = numeroNuevo;
 					contadorPuntos++;
 
-				} else
+				} else {
 					System.out.println("Perdiste. Acertaste durante: " + contadorPuntos + " rondas.");
-				acerto = 'N';
+					acerto = 'N';
+				}
 
 				break;
 
@@ -66,22 +68,19 @@ public class ParcialNicolasTourino {
 					numero = numeroNuevo;
 					contadorPuntos++;
 
-				} else
+				} else {
 					System.out.println("Perdiste. Acertaste durante: " + contadorPuntos + " rondas.");
-				acerto = 'N';
+					acerto = 'N';
+				}
 				break;
 
-			default:
-				break;
 			}
 
 			respuesta = " ";
-			// No sé porque me esta pasando el flag a N, cuando en los if del case, si es
-			// true no los pasa a false. Es como que procesa el true e igualmente luego
-			// procesa el false..
-			System.out.println(acerto);
 
-		} while (acerto == 'N');
+			// Esta es una reversión del parcial entregado ya que me faltarón los { } en el else del if que están dentros de los case del switch.
+
+		} while (acerto == 'S');
 
 	}
 
